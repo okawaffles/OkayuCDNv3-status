@@ -1,0 +1,52 @@
+@font-face {
+    font-family: KFhimajiMOCO;
+    src: url('https://okayu.okawaffles.com/content/okawaffles/kfhimajimoco.otf');
+}
+
+body {
+    background-color: #dbdbdb;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: KFhimajiMOCO;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-size: larger;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+
+
+.services-all {
+    font-family: KFhimajiMOCO;
+    background-color: #b3b3b3;
+    border-radius: 12px;
+    padding: 0px 10px;
+    margin: 10px;
+}
+
+.okayucdn {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/styles/styles.css">
+
+    <title>OkayuServer Status</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="./">OkayuServer</a></li>
+        <li><a href="./okayucdn">OkayuCDN</a></li>
+    </ul>
+
+    <br>
+
+    <div class="services-all">
+        <div class="okayucdn">
+            <h1 style="padding: 10px;">OkayuCDN User-Viewable Pages</h1>
+            <h2 class="okayucdn-status" id="status_okayucdn" style="background-color: red; padding: 15px 10px; border-radius: 10px; color: white;">Checking...</h2>
+        </div>
+    </div>
+</body>
+
+<script>
+    let result = "<%= status %>";
+    if (result === "200") {
+        document.getElementById('status_okayucdn').innerHTML = "Online (200)";
+        document.getElementById('status_okayucdn').style = "background-color: green; padding: 15px 10px; border-radius: 10px; color: white;"
+    } else document.getElementById('status_okayucdn').innerHTML = "Offline (no response)";
+</script>
+
+</html>
