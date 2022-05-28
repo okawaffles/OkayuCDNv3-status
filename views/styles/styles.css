@@ -35,7 +35,10 @@ li a:hover {
     background-color: #111;
 }
 
-
+.notice {
+    font-family: KFhimajiMOCO;
+    padding: 10px;
+}
 
 .services-all {
     font-family: KFhimajiMOCO;
